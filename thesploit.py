@@ -32,11 +32,11 @@ _________          _______  _______  _______  _        _______ _________  ______
 %s
 Contoh Payload:
  1) Binaries Payloads
- 2) Scripting Payloads
- 3) Web Payloads
+ 2) Payload Script
+ 3) Payload Web
  4) Encrypters
  0) keluar
-"""%(R,G,B))
+"""%(B,Y,W))
     banner = raw_input(" Silahken pilih : ")
     print("")
 
@@ -545,11 +545,22 @@ def pyenc():
             os.system("cd NXcrypt && sudo python NXcrypt.py -f ../%s -o ../%s"%(pypayload,pyoutput))
 
 ####################  BEGIN  #######################
-print("-----------------------------------------------")
+print("===============================================")
 print("Apa kamu telah menginstall Metasploit ? (Y/N)")
-print("-----------------------------------------------")
-
+print("===============================================")
+"%(R)
 mscheck = raw_input("Jawaban: ")
+if mscheck in no:
+	msf()
+elif mscheck in yes:
+	banner()
+else: 
+	banner()
+print("===============================================")
+print("Tools Decoded By TheSploit ? (Y/N)")
+print("===============================================")
+"%(B)
+mscheck = raw_input("Answer: ")
 if mscheck in no:
 	msf()
 elif mscheck in yes:
