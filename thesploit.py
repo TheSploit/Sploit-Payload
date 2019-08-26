@@ -556,13 +556,3 @@ elif mscheck in yes:
 else: 
 	banner()
 	
-print("===============================================")
-print("Tools Decoded By TheSploit ? (Y/N)")
-print("===============================================")
-mscheck = raw_input("Answer: ")
-if mscheck in no:
-	msf()
-elif mscheck in yes:
-	banner()
-else: 
-	banner()
