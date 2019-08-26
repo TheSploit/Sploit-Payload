@@ -545,6 +545,7 @@ def pyenc():
             os.system("cd NXcrypt && sudo python NXcrypt.py -f ../%s -o ../%s"%(pypayload,pyoutput))
 
 ####################  BEGIN  #######################
+%s
 print("===============================================")
 print("Apa kamu telah menginstall Metasploit ? (Y/N)")
 print("===============================================")
@@ -556,6 +557,7 @@ elif mscheck in yes:
 	banner()
 else: 
 	banner()
+	%s
 print("===============================================")
 print("Tools Decoded By TheSploit ? (Y/N)")
 print("===============================================")
